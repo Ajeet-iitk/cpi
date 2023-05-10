@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPI and CPI Calculator</title>
+  <link rel="stylesheet" type="text/css" href="cpi_style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SPI and CPI Calculator (IIT Kanpur)</h1>
+    <h4><i>Develop by Ajeet Kushwaha (Y20)</i></h4>
+
+    <h2>SPI Calculation</h2>
+    <table id="spiTable">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Credit</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody id="spiTableBody">
+        <tr>
+          <td>Course 1</td>
+          <td><input type="number" class="credit" min="0" required></td>
+          <td>
+            <select class="grade" required>
+              <option value="10">A*</option>
+              <option value="10">A</option>
+              <option value="9">B+</option>
+              <option value="8">B</option>
+              <option value="7">C+</option>
+              <option value="6">C</option>
+              <option value="5">D+</option>
+              <option value="4">D</option>
+              <option value="0">E</option>
+              <option value="0">F</option>
+              <option value="0">I</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="addCourseBtn">Add Course</button>
+    <button id="calculateSPIBtn">Calculate SPI</button>
+    <p id="spiResult"></p>
+
+    <h2>CPI Calculation</h2>
+    <table id="cpiTable">
+      <thead>
+        <tr>
+          <th>Semester</th>
+          <th>Total Credit</th>
+          <th>SPI</th>
+        </tr>
+      </thead>
+      <tbody id="cpiTableBody">
+        <tr>
+          <td>Semester 1</td>
+          <td><input type="number" class="tcredit" min="0" required></td>
+          <td><input type="number" class="spi" min="0" required></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="addSemesterBtn">Add Semester</button>
+    <button id="calculateCPIBtn">Calculate CPI</button>
+    <p id="cpiResult"></p>
+
+    <script src="cpi.js"></script>
+  </div>
+</body>
+</html>
